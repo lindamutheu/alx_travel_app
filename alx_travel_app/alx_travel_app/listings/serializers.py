@@ -12,8 +12,7 @@ class ListingSerializer(serializers.ModelSerializer):
         model = Listing
         fields = [
             'property_id',
-            'host',
-            'name',
+            'title',
             'description',
             'location',
             'price_per_night',
@@ -28,11 +27,9 @@ class BookingSerializer(serializers.ModelSerializer):
         model = Booking
         fields = [
             'booking_id',
-            'property',
-            'user',
-            'start_date',
-            'end_date',
-            'total_price',
-            'status',
+            'listing',
+            'guest_name'
+            'check_in'
+            'check_out'
             'created_at',
         ]
