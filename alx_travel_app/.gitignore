@@ -1,0 +1,4 @@
+venv/
+_pycache_/
+alx_travel_app requirements.txt .pyc
+env
